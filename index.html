@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тожикистон ҳақида</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Базовый стиль */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #fefcea, #f1da36);
+            color: #333;
+        }
+
+        header {
+            background: #009688;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #d32f2f;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #009688;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #009688;
+            font-weight: bold;
+        }
+
+        .flag, .map {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            background: #00796b;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        /* Кнопка наверх */
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #d32f2f;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        #topBtn:hover {
+            background-color: #ff5722;
+        }
+        /* Аҳоли rasmi uchun professional style */
+.population-img {
+    display: block;                  /* markazlash */
+    margin: 20px auto;               /* yuqori/past va markazlash */
+    max-width: 80%;                  /* rasm kengligi */
+    border-radius: 15px;             /* yumaloq burchaklar */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* yumshoq soya */
+    transition: transform 0.3s, box-shadow 0.3s; /* hover animatsiya */
+}
+
+.population-img:hover {
+    transform: scale(1.05);          /* hoverda biroz kattalashadi */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5); /* kuchaytirilgan soya */
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Тожикистон</h1>
+        <nav>
+            <a href="#about">Ҳақида</a>
+            <a href="#population">Аҳоли</a>
+            <a href="#territory">Территория</a>
+            <a href="#geography">Географик жойлашув</a>
+            <a href="#culture">Маданият</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Ҳақида</h2>
+            <p>Тожикистон Марказий Осиёда жойлашган мустақил давлат. Давлатнинг расмий номи <span class="highlight">Тожикистон Республикаси</span>. Пойтахти <span class="highlight">Душанбе</span> шаҳри ҳисобланади. Давлатнинг асосий тили <span class="highlight">тоҷик тили</span> бўлиб, рус тили ҳам кенг қўлланилади.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg" alt="Тожикистон байроғи" class="population-img">
+        </div>
+    </section>
+
+    <section id="population">
+        <div class="container">
+            <h2>Аҳоли</h2>
+            <p>Тожикистон аҳолиси тахминан <span class="highlight">10 миллион</span> атрофида. Асосий аҳоли тоифаси тоҷиклар, шунингдек, ўзбеклар ва руслар ҳам яшайди. Аҳоли асосан шаҳарларда ва водийларда жойлашган.</p>
+            <img src="https://www.ifad.org/documents/d/new-ifad.org/countries-tajikistan?imagePreview=1" alt="Ахоли" class="population-img">
+        </div>
+    </section>
+
+    <section id="territory">
+        <div class="container">
+            <h2>Территория</h2>
+            <p>Давлат майдони тахминан <span class="highlight">143,100 км²</span>. Тожикистон тоғли мамлакат бўлиб, ҳудудининг катта қисми Помир ва Тянь-Шань тоғлари билан қопланган. Шаҳарлар ва қишлоқларда яшаш қийин, лекин жойлар жуда гўзал.</p>
+            <img src="https://www.advantour.com/img/tajikistan/nature/pamir-mountains8.jpg" alt="territoriya" class="population-img">
+        </div>
+    </section>
+
+    <section id="geography">
+        <div class="container">
+            <h2>Географик жойлашув</h2>
+            <p>Тожикистон қатор давлатлар билан чегарадош: <span class="highlight">Ўзбекистон, Қирғизистон, Афғонистон ва Хитой</span>. Тўлиқ тоғли ҳудуд, кўп водийлар ва тоғ дарёлари билан машҳур.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Tajikistan_Map_TI-map.gif" alt="Тожикистон харитаси" class="population-img">
+        </div>
+    </section>
+
+    <section id="culture">
+        <div class="container">
+            <h2>Маданият ва анъаналар</h2>
+            <p>Тожикистон маданияти бой ва турли. Миллий мусиқа, рақслар ва миллий таомлар, масалан <span class="highlight">палов</span>, ҳануз ҳам кенг тарқалган. Байрамлар ва миллий анъаналар аҳоли ҳаётида муҳим ўрин тутади.</p>
+            <img src="https://xabar.uz/static/crop/1/9/960__80_1905976193.jpg" alt="Тожикистон харитаси" class="population-img">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Тожикистон ҳақида маълумотлар. Барча ҳуқуқлар ҳимояланган. @penomin</p>
+    </footer>
+
+    <button onclick="topFunction()" id="topBtn" title="Тепага қайтиш">&#8679;</button>
+
+    <script>
+        // Кнопка наверх
+        let topButton = document.getElementById("topBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
